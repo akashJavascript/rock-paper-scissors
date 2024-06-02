@@ -58,7 +58,7 @@ function updateGame(winner) {
   } else if (winner === 'computer') {
     computerScore++;
   }
-  resultEl.textContent = `Player Score: ${playerScore}, Computer Score: ${computerScore}  `;
+  resultEl.innerHTML = `Player Score: ${playerScore}, Computer Score: ${computerScore} <br> Winner of current round was ${winner}`;
   if (playerScore === 5 || computerScore === 5) {
     if (playerScore === 5) {
       resultEl.innerHTML += ' <br>Player Has Won';
